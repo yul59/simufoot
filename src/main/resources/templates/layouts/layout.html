@@ -1,0 +1,54 @@
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout">
+	
+	<head layout:fragment="header">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title th:text="#{application.titre.page.home}">SimuFoot</title>
+		<link rel="stylesheet" type="text/css" href="../static/css/style.css" th:href="@{/css/style.css}" />
+	</head>
+
+	<body>
+
+		<div id="page">
+    
+			<!-- #logo -->
+			<div id="header"><img src="/static/images/simufoot.jpg" th:src="@{/images/simufoot.jpg}" alt="header" /></div>
+
+			<!-- #menu -->
+			<div id="menu">
+				<ul>
+					<li><a th:href="@{/}" href="index.html">Home</a></li>
+					<li><a th:href="@{/options}" href="/options/optionInit.html">Options</a></li>
+					<li><a href="">Init</a></li>
+				</ul>
+			</div>    
+			<!-- #menu end -->
+
+			<div id="content">
+			
+				<div id="sidebar">
+					<h2>Championnats</h2>			
+					<ul>
+						<li><a href="">Allemagne</a></li>
+						<li><a href="">Angleterre</a></li>
+						<li><a href="">Espagne</a></li>
+						<li><a href="">France</a></li>
+						<li><a href="">Italie</a></li>
+					</ul>	
+				</div><!-- div sidebar -->
+			
+				<div id="textarea" layout:fragment="textarea">
+					<h1>Bienvenue sur SimuFoot</h1>
+				</div><!-- div textarea -->
+
+				<!-- #footer -->
+				<img src="../static/images/bg_banner_grey.gif" th:src="@{/images/bg_banner_grey.gif}" width="880" height="3" alt="line" />
+
+				<div id="footer">
+					SimuFoot 2016
+				</div><!-- div footer -->
+				
+			</div><!-- div content -->
+		</div><!-- div page -->
+		
+	</body>
+</html>
