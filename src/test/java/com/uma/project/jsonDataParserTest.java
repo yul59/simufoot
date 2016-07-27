@@ -21,7 +21,7 @@ public class jsonDataParserTest {
             e.printStackTrace();
         }
 
-        System.out.println("resultat3 = " + new JsonDataParser().parseTeams(jsonData).toString());
+        System.out.println("resultat4 = " + new JsonDataParser().parseTeams(jsonData).toString());
     }
 
     public String loadFileString(String file) throws IOException {
